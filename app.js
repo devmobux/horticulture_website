@@ -74,59 +74,58 @@ for(let tab of tabs) {
 
 VanillaCounter();
 
-var swiper = new Swiper(".mySwiper", {
+var swiper1 = new Swiper(".mySwiper1", {
+
   spaceBetween: 30,
-  slidesPerView: 1,
-  grid: {
-    rows: 1,
+  
+pagination: {
+  el: ".swiper-pagination",
+  clickable: true
+},
+navigation: {
+  nextEl: ".swiper-button-next",
+  prevEl: ".swiper-button-prev",
+},
+breakpoints: {
+  0: {
+    slidesPerView: 1,
   },
+  692: {
+    slidesPerView: 2,
+  },
+  992: {
+    slidesPerView: 3,
+  slidesPerColumnFill: 'column',
+    grid: {
+      rows: 2,
+    },
+  }
+}
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+      spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      0: {
-        slidesPerView: 1,
-        grid: {
-          rows: 1,
-        },
-      },
-      662: {
+      768: {
         slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
       },
-      992: {
+      1024: {
         slidesPerView: 3,
-        grid: {
-          rows: 2,
-        },
+      },
+      1280: {
+        slidesPerView: 4,
       }
     }
   });
 
-  var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 3,
-        spaceBetween: 30,
-        
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        692: {
-          slidesPerView: 2,
-        },
-        992: {
-          slidesPerView: 4,
-        }
-      }
-    });
+    
+   

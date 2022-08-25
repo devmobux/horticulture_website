@@ -49,16 +49,16 @@
             <main>
                 <!-- section introduction-->
                 <div class="intro">
-                    <video autoplay="autoplay" loop="loop" muted="" src="video/backgroud-video-1.mp4"></video>
+                    <img src="https://img.freepik.com/free-photo/woman-hat-holding-funnel-works-garden_1157-38529.jpg?w=996&t=st=1661422583~exp=1661423183~hmac=c50ddbb7a679584298e3a13b561544293aa02f5993880023ac0b27bf5668e928"></video>
                     <div class="intro-text">
                         <h1 style="font-size: 5rem;">Bienvenu</h1>
                         <h1>Faite vous accompagner dans vos projets horicultures par notre direction</h1>
-                        <a href="#services">En savoir plus <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#service-section">En savoir plus <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 
                     </div>
                 </div>
                 <!-- section services -->
-                <div class="section">
+                <div class="section" id="service-section">
                     <h1 class="col-12 text-center">Nos Services</h1>
                     <div class="row gx-5 gy-3 text-center justify-content-center" id="services">
                         <div class="col-10 col-md-6 col-lg-4">
@@ -580,43 +580,61 @@
                                 </div>
                             </div>
                             <!-- section resultats-->
-                            <div class="section">
-                                <h1 class="col-12 text-center">Nos produits et Resultas</h1>
+                            <div class="section container">
+                                <h1 class="text-center">Nos produits et Resultas</h1>
 
-                                <div class="box">
-                                    <div class="card">
-                                      <div class="imgBx">
-                                          <img src="images/r1.jpg" alt="images">
-                                      </div>
-                                      <div class="details">
-                                          <h2>Plante d'ornementales 1</h2>
-                                      </div>
+                                <div class="swiper mySwiper1">
+                                    <div class="swiper-wrapper">
+                                        <div class="card swiper-slide">
+                                            <div class="imgBx">
+                                                <img src="images/r1.jpg" alt="images">
+                                            </div>
+                                            <div class="details">
+                                                <h2>Plante d'ornementales 1</h2>
+                                            </div>
+                                        </div>
+                                        <div class="card swiper-slide">
+                                            <div class="imgBx">
+                                               <img src="images/r2.jpg" alt="images">
+                                            </div>
+                                            <div class="details">
+                                               <h2>Pomme</h2>
+                                             </div>
+                                        </div>
+                                        <div class="card swiper-slide">
+                                            <div class="imgBx">
+                                               <img src="images/r3.jpg" alt="images">
+                                            </div>
+                                            <div class="details">
+                                               <h2>Rasin</h2>
+                                            </div>
+                                        </div>
+                                        <div class="card swiper-slide">
+                                            <div class="imgBx">
+                                               <img src="images/r3.jpg" alt="images">
+                                            </div>
+                                            <div class="details">
+                                               <h2>Rasin</h2>
+                                             </div>
+                                        </div>
+                                        <div class="card swiper-slide">
+                                            <div class="imgBx">
+                                               <img src="images/r3.jpg" alt="images">
+                                            </div>
+                                            <div class="details">
+                                               <h2>Rasin</h2>
+                                             </div>
+                                        </div>
                                     </div>
-                                  
-                                     <div class="card">
-                                       <div class="imgBx">
-                                          <img src="images/r2.jpg" alt="images">
-                                       </div>
-                                       <div class="details">
-                                          <h2>Pomme</h2>
-                                        </div>
-                                     </div>
-                              
-                                     <div class="card">
-                                       <div class="imgBx">
-                                          <img src="images/r3.jpg" alt="images">
-                                       </div>
-                                       <div class="details">
-                                          <h2>Rasin</h2>
-                                        </div>
-                                     </div>
-                               
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
                                 </div>
-                                
+                            </div>
                             <!-- section partenaires et decideurs-->
                             <div class="section partener px-5">
                                 <h1 class="text-center">Nos décideurs et paternaires</h1>
-                                <div class="swiper mySwiper2">
+                                <div class="swiper mySwiper2 container justify-content-center d-flex">
                                     <div class="active-with-click swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <article class="material-card Red">
@@ -947,11 +965,32 @@
                             <div class="event">
                                 <h1>Nos programmes à venir</h1>
                                 <section>
-                                    <h2>Nature</h2>
+                                    <h2>Comment entretenir vos fleurs à la maison ?</h2>
                                     <div class="event-content">
-                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias.</p><a href="">Learn more</a>
+                                      <p>
+                                        Venez massivement découvrir comment faire l'entretien de vos plantes à la maison.
+                                        Plusieurs experts en cultures horiculture du Togo, Benin viendront vous apprendre leur savoir-faire.
+                                    </p>
+                                    <article class="location">
+                                        <i class="fa fa-map-marker"></i> 
+                                        <span>Palais de congrès de kara</span>
+                                    </article>
+                                    <article class="date">
+                                        <span class="number">25</span>
+                                        <span class="sep">-</span>
+                                        <span class="number">09</span>
+                                        <span class="sep">-</span>
+                                        <span class="number">2022</span>
+                                        <span class="time">
+                                            <span class="number">17</span>
+                                            <span class="sep">H</span>
+                                            <span class="number">00</span>
+                                        </span>
+                                    </article>
                                     </div>
-                                    <div class="img"><img src="https://img.freepik.com/free-vector/colored-greenhouse-composition_1284-17637.jpg?w=826&t=st=1661392512~exp=1661393112~hmac=739d3f90c5d2c29ab73bc8425369c251ec84944e4804d95a5b5f227df8703218"/></div>
+                                    <div class="img">
+                                        <img src="https://img.freepik.com/free-vector/colored-greenhouse-composition_1284-17637.jpg?w=826&t=st=1661392512~exp=1661393112~hmac=739d3f90c5d2c29ab73bc8425369c251ec84944e4804d95a5b5f227df8703218"/>
+                                    </div>
                                   </section>
                             </div>
             </main>
