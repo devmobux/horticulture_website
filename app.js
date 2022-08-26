@@ -66,10 +66,8 @@ window.addEventListener('scroll', e => {
   navbar.classList.remove('sticky', 'shadow-lg');
 });
 
-VanillaCounter();
 
 var swiper1 = new Swiper(".mySwiper1", {
-
   spaceBetween: 30,
   slidesPerView: 1,
   grid: {
@@ -122,5 +120,4 @@ var swiper2 = new Swiper(".mySwiper2", {
     }
   });
 
-    
-   
+VanillaCounter();
