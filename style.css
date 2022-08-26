@@ -563,43 +563,7 @@ img, video, svg {
     --box-y-padding: 6rem;
   }
 }
-.event {
-  margin: 50px 20px;
-}
-@media (min-width: 40em) {
-  .event section {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: 4fr 4fr 5fr;
-    grid-template-areas: '. . title' 'img img content' 'img img .';
-    max-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .event section::after {
-    content: '';
-    grid-column: 2/-1;
-    grid-row: 1/3;
-    position: relative;
-    z-index: -1;
-    background: #fff;
-    box-shadow: 0 0.2em 1em rgba(61,48,41,0.2);
-  }
-  .event h2 {
-    grid-area: title;
-    padding-top: var(--box-y-padding);
-    padding-left: var(--box-x-padding);
-  }
-  .event-content {
-    grid-area: content;
-    padding-bottom: var(--box-y-padding);
-    padding-left: var(--box-x-padding);
-    padding-right: var(--box-x-padding);
-  }
-  .event .img {
-    grid-area: img;
-  }
-}
+
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
@@ -617,47 +581,18 @@ html {
   background-color: #ccc;
   height: 2px;
   top: 0;
-  left: 0;
+  left: 30px;
 }
-@media (min-width: 40em) {
-  .event h2::after {
-    left: var(--box-x-padding);
-    top: var(--box-y-padding);
-  }
+
+.event img {
+  height: 100%;
+  width: 100%;
 }
-.event-content {
-  color: #4d4d4d;
-  margin-bottom: var(--box-y-padding);
-}
-@media (min-width: 40em) {
-  .event-content {
-    margin-bottom: 0;
-  }
-}
+
 .event p {
   margin-top: 0;
   margin-bottom: var(--box-y-padding);
   line-height: 1.5;
-}
-.event-content a {
-  text-decoration: none;
-  border: 1px solid #b3b3b3;
-  border-radius: 1em;
-  padding: 1em 2em;
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: inherit;
-  display: inline-block;
-  background-color: #fff;
-}
-.event .img {
-  position: relative;
-}
-.event img {
-  max-width: 100%;
-  box-shadow: 0 0.2em 1.2em rgba(61,48,41,0.1);
 }
 
 .event .location i {
@@ -695,12 +630,6 @@ html {
   font-size: 3rem;
  }
 
-
-
-
-
-
-@import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
 .fa-spin-fast {
   -webkit-animation: fa-spin-fast 0.2s infinite linear;
   animation: fa-spin-fast 0.2s infinite linear;
@@ -2604,6 +2533,7 @@ body {
 
 #footer ul li {
   margin: 10px 0;
+  list-style: none;
 }
 
 @media (min-width: 992px) { 
