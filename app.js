@@ -54,29 +54,27 @@ Util.osHasReducedMotion = function() {
   }
 }());
 
-const menuBtn = document.getElementById('menu-btn');
-menuBtn.addEventListener('click', e => {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('active');
-    e.target.classList.toggle('active');
+const navbar = document.querySelector('.navbar');
+
+document.getElementById('menu-btn').addEventListener('click', () => navbar.classList.toggle('collapsed'));
+document.getElementById('close-btn').addEventListener('click', () => navbar.classList.remove('collapsed'));
+
+window.addEventListener('scroll', e => {
+  let windowY = window.pageYOffset;
+  let navbarHeight = document.querySelector('.navbar').offsetHeight;
+  if (windowY > navbarHeight) navbar.classList.add('sticky', 'shadow-lg');else
+  navbar.classList.remove('sticky', 'shadow-lg');
 });
-const tabs = document.querySelectorAll('.tabs a');
-for(let tab of tabs) {
-    tab.addEventListener('click', e => {
-        const current = tab;
-        tab.classList.toggle('active');
-        for(let tab of tabs) {
-            console.log(tab);
-            if(current != tab && tab.classList.contains('active')) tab.classList.remove('active');
-        }
-    })
-}
 
 VanillaCounter();
 
 var swiper1 = new Swiper(".mySwiper1", {
 
   spaceBetween: 30,
+  slidesPerView: 1,
+  grid: {
+    rows: 1,
+  },
   
 pagination: {
   el: ".swiper-pagination",
@@ -87,17 +85,14 @@ navigation: {
   prevEl: ".swiper-button-prev",
 },
 breakpoints: {
-  0: {
-    slidesPerView: 1,
-  },
   692: {
     slidesPerView: 2,
   },
   992: {
     slidesPerView: 3,
-  slidesPerColumnFill: 'column',
     grid: {
       rows: 2,
+      fill: 'row',
     },
   }
 }

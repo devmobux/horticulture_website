@@ -5,23 +5,33 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/animate.min.css">
         <title>Direction horiculture</title>
     </head>
 
     <body>
         <div class="wrapper">
-            <header style="animation-duration: 1s;">
-                <nav id="menu">
-                    <div>
-                        <img src="images/logo.png" alt="logo" width="40" height="40" id="logo">
+            <header>
+                <nav>
+                    <div class="navbar">
+
+                        <div class="logo">
+                            <h2><a href="#"><img src="images/logo.png" alt="logo" width="60" height="60" id="logo"></a>
+                            </h2>
+                        </div>
+
+
+                        <ul class="links">
+                            <li><a href="#" class="slide-line">Acceuil</a></li>
+                            <li><a href="#service-section" class="slide-line">Services</a></li>
+                            <li><a href="#result-section" class="slide-line">Resultats</a></li>
+                            <li><a href="#member-section" class="slide-line">Membres</a></li>
+                            <li><a href="#contact" class="slide-line">Contact</a></li>
+                        </ul>
+
                         <button id="menu-btn">
                             <div class="lines">
                                 <div class="line"></div>
@@ -29,38 +39,31 @@
                                 <div class="line"></div>
                             </div>
                         </button>
-                    </div>
-                    <div>
-                        <ul>
-                            <li class="animated zoomIn" style="animation-delay: 0.1;"><a href="#"
-                                    class="slide-line">Acceuil</a></li>
-                            <li class="animated zoomIn" style="animation-delay: 0.2;"><a href="#" class="slide-line">Nos
-                                    services</a></li>
-                            <li class="animated zoomIn" style="animation-delay: 0.3;"><a href="#" class="slide-line">Nos
-                                    produits</a></li>
-                            <li class="animated zoomIn" style="animation-delay: 0.4;"><a href="#" class="slide-line">Nos
-                                    projets</a></li>
-                            <li class="animated zoomIn" style="animation-delay: 0.5;"><a href="#" class="slide-line">Nos
-                                    paternaires</a></li>
-                        </ul>
+
+                        <button id="close-btn">
+                            <i class="fa fa-close"></i>
+                        </button>
+
                     </div>
                 </nav>
             </header>
             <main>
                 <!-- section introduction-->
                 <div class="intro">
-                    <img src="https://img.freepik.com/free-photo/woman-hat-holding-funnel-works-garden_1157-38529.jpg?w=996&t=st=1661422583~exp=1661423183~hmac=c50ddbb7a679584298e3a13b561544293aa02f5993880023ac0b27bf5668e928"></video>
+                    <img
+                        src="https://img.freepik.com/free-photo/woman-hat-holding-funnel-works-garden_1157-38529.jpg?w=996&t=st=1661422583~exp=1661423183~hmac=c50ddbb7a679584298e3a13b561544293aa02f5993880023ac0b27bf5668e928"></video>
                     <div class="intro-text">
                         <h1 style="font-size: 5rem;">Bienvenu</h1>
                         <h1>Faite vous accompagner dans vos projets horicultures par notre direction</h1>
-                        <a href="#service-section">En savoir plus <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#service-section">En savoir plus <i class="fa fa-long-arrow-right"
+                                aria-hidden="true"></i></a>
 
                     </div>
                 </div>
                 <!-- section services -->
                 <div class="section" id="service-section">
                     <h1 class="col-12 text-center">Nos Services</h1>
-                    <div class="row gx-5 gy-3 text-center justify-content-center" id="services">
+                    <div class="row gx-5 gy-3 text-center justify-content-center px-md-5" id="services">
                         <div class="col-10 col-md-6 col-lg-4">
                             <div class="shadow-lg p-4">
                                 <div class="service-number">1</div>
@@ -580,50 +583,130 @@
                                 </div>
                             </div>
                             <!-- section resultats-->
-                            <div class="section container">
+                            <div class="section container" id="result-section">
                                 <h1 class="text-center">Nos produits et Resultas</h1>
 
                                 <div class="swiper mySwiper1">
                                     <div class="swiper-wrapper">
-                                        <div class="card swiper-slide">
-                                            <div class="imgBx">
-                                                <img src="images/r1.jpg" alt="images">
-                                            </div>
-                                            <div class="details">
-                                                <h2>Plante d'ornementales 1</h2>
-                                            </div>
-                                        </div>
-                                        <div class="card swiper-slide">
-                                            <div class="imgBx">
-                                               <img src="images/r2.jpg" alt="images">
-                                            </div>
-                                            <div class="details">
-                                               <h2>Pomme</h2>
-                                             </div>
-                                        </div>
-                                        <div class="card swiper-slide">
-                                            <div class="imgBx">
-                                               <img src="images/r3.jpg" alt="images">
-                                            </div>
-                                            <div class="details">
-                                               <h2>Rasin</h2>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r1.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Plante d'ornementales 1</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="card swiper-slide">
-                                            <div class="imgBx">
-                                               <img src="images/r3.jpg" alt="images">
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r2.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Pomme</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
                                             </div>
-                                            <div class="details">
-                                               <h2>Rasin</h2>
-                                             </div>
                                         </div>
-                                        <div class="card swiper-slide">
-                                            <div class="imgBx">
-                                               <img src="images/r3.jpg" alt="images">
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r3.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Rasin</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
                                             </div>
-                                            <div class="details">
-                                               <h2>Rasin</h2>
-                                             </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r3.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Rasin</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r3.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Rasin</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r1.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Plante d'ornementales 1</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r2.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Pomme</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r3.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Rasin</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r3.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Rasin</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <div class="imgBx">
+                                                    <img src="images/r3.jpg" alt="images">
+                                                </div>
+                                                <div class="details">
+                                                    <h2>Rasin</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Necessitatibus, consequatur!</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -632,330 +715,340 @@
                                 </div>
                             </div>
                             <!-- section partenaires et decideurs-->
-                            <div class="section partener px-5">
+                            <div class="section partener px-5" id="member-section">
                                 <h1 class="text-center">Nos décideurs et paternaires</h1>
                                 <div class="swiper mySwiper2 container justify-content-center d-flex">
                                     <div class="active-with-click swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <article class="material-card Red">
-                                                    <h2>
-                                                        <span>Christopher Walken</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Décideurs
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-christopher-walken.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Red">
+                                                <h2>
+                                                    <span>Christopher Walken</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Décideurs
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-christopher-walken.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <article class="material-card Pink">
-                                                    <h2>
-                                                        <span>Sean Penn</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Paternaire
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-sean-penn.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Pink">
+                                                <h2>
+                                                    <span>Sean Penn</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Paternaire
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-sean-penn.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <article class="material-card Purple">
-                                                    <h2>
-                                                        <span>Clint Eastwood</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Producteur
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-clint-eastwood.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Purple">
+                                                <h2>
+                                                    <span>Clint Eastwood</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Producteur
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-clint-eastwood.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <article class="material-card Deep-Purple">
-                                                    <h2>
-                                                        <span>Dustin Hoffman</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Décideur
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-dustin-hoffman.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Deep-Purple">
+                                                <h2>
+                                                    <span>Dustin Hoffman</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Décideur
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-dustin-hoffman.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <article class="material-card Indigo">
-                                                    <h2>
-                                                        <span>Edward Norton</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Décideur
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-edward-norton.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Indigo">
+                                                <h2>
+                                                    <span>Edward Norton</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Décideur
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-edward-norton.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <article class="material-card Blue">
-                                                    <h2>
-                                                        <span>Michael Caine</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Partenaire
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-michael-caine.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Blue">
+                                                <h2>
+                                                    <span>Michael Caine</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Partenaire
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-michael-caine.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <article class="material-card Light-Blue">
-                                                    <h2>
-                                                        <span>Harvey Keitel</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Producteur
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-harvey-keitel.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Light-Blue">
+                                                <h2>
+                                                    <span>Harvey Keitel</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Producteur
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-harvey-keitel.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <article class="material-card Cyan">
-                                                    <h2>
-                                                        <span>Jack Nicholson</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Producteur
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-jack-nicholson.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Cyan">
+                                                <h2>
+                                                    <span>Jack Nicholson</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Producteur
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-jack-nicholson.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <article class="material-card Teal">
-                                                    <h2>
-                                                        <span>Jeff Bridges</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Producteur
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-jeff-bridges.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Teal">
+                                                <h2>
+                                                    <span>Jeff Bridges</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Producteur
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-jeff-bridges.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <article class="material-card Green">
-                                                    <h2>
-                                                        <span>Joaquin Phoenix</span>
-                                                        <strong>
-                                                            <i class="fa fa-fw fa-star"></i>
-                                                            Décideur
-                                                        </strong>
-                                                    </h2>
-                                                    <div class="mc-content">
-                                                        <div class="img-container">
-                                                            <img class="img-responsive"
-                                                                src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-joaquin-phoenix.jpg">
-                                                        </div>
-                                                        <div class="mc-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo blanditiis et architecto, minus tenetu
-                                                        </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="material-card Green">
+                                                <h2>
+                                                    <span>Joaquin Phoenix</span>
+                                                    <strong>
+                                                        <i class="fa fa-fw fa-star"></i>
+                                                        Décideur
+                                                    </strong>
+                                                </h2>
+                                                <div class="mc-content">
+                                                    <div class="img-container">
+                                                        <img class="img-responsive"
+                                                            src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-joaquin-phoenix.jpg">
                                                     </div>
-                                                    <a class="mc-btn-action">
-                                                        <i class="fa fa-bars"></i>
-                                                    </a>
-                                                    <div class="mc-footer">
-                                                        <h4>
-                                                            Social
-                                                        </h4>
-                                                        <a class="fa fa-fw fa-facebook"></a>
-                                                        <a class="fa fa-fw fa-twitter"></a>
-                                                        <a class="fa fa-fw fa-linkedin"></a>
-                                                        <a class="fa fa-fw fa-google-plus"></a>
+                                                    <div class="mc-description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo
+                                                        blanditiis et architecto, minus tenetu
                                                     </div>
-                                                </article>
-                                            </div>
+                                                </div>
+                                                <a class="mc-btn-action">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                                <div class="mc-footer">
+                                                    <h4>
+                                                        Social
+                                                    </h4>
+                                                    <a class="fa fa-fw fa-facebook"></a>
+                                                    <a class="fa fa-fw fa-twitter"></a>
+                                                    <a class="fa fa-fw fa-linkedin"></a>
+                                                    <a class="fa fa-fw fa-google-plus"></a>
+                                                </div>
+                                            </article>
+                                        </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
                                     <div class="swiper-button-prev"></div>
@@ -967,32 +1060,89 @@
                                 <section>
                                     <h2>Comment entretenir vos fleurs à la maison ?</h2>
                                     <div class="event-content">
-                                      <p>
-                                        Venez massivement découvrir comment faire l'entretien de vos plantes à la maison.
-                                        Plusieurs experts en cultures horiculture du Togo, Benin viendront vous apprendre leur savoir-faire.
-                                    </p>
-                                    <article class="location">
-                                        <i class="fa fa-map-marker"></i> 
-                                        <span>Palais de congrès de kara</span>
-                                    </article>
-                                    <article class="date">
-                                        <span class="number">25</span>
-                                        <span class="sep">-</span>
-                                        <span class="number">09</span>
-                                        <span class="sep">-</span>
-                                        <span class="number">2022</span>
-                                        <span class="time">
-                                            <span class="number">17</span>
-                                            <span class="sep">H</span>
-                                            <span class="number">00</span>
-                                        </span>
-                                    </article>
+                                        <p>
+                                            Venez massivement découvrir comment faire l'entretien de vos plantes à la
+                                            maison.
+                                            Plusieurs experts en cultures horiculture du Togo, Benin viendront vous
+                                            apprendre leur savoir-faire.
+                                        </p>
+                                        <article class="location">
+                                            <i class="fa fa-map-marker"></i>
+                                            <span>Palais de congrès de kara</span>
+                                        </article>
+                                        <article class="date">
+                                            <span class="number">25</span>
+                                            <span class="sep">-</span>
+                                            <span class="number">09</span>
+                                            <span class="sep">-</span>
+                                            <span class="number">2022</span>
+                                            <span class="time">
+                                                <span class="number">17</span>
+                                                <span class="sep">H</span>
+                                                <span class="number">00</span>
+                                            </span>
+                                        </article>
                                     </div>
                                     <div class="img">
-                                        <img src="https://img.freepik.com/free-vector/colored-greenhouse-composition_1284-17637.jpg?w=826&t=st=1661392512~exp=1661393112~hmac=739d3f90c5d2c29ab73bc8425369c251ec84944e4804d95a5b5f227df8703218"/>
+                                        <img
+                                            src="https://img.freepik.com/free-vector/colored-greenhouse-composition_1284-17637.jpg?w=826&t=st=1661392512~exp=1661393112~hmac=739d3f90c5d2c29ab73bc8425369c251ec84944e4804d95a5b5f227df8703218" />
                                     </div>
-                                  </section>
+                                </section>
                             </div>
+
+                            <section>
+                                <ul id="contact" class="section">
+                                    <h1>Contactez-nous via <br> nos liens de réseaux sociaux</h1>
+                                    <li>
+                                        <div class="facebook">
+                                            <a href="#">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <span>Facebook</span>
+                                    </li>
+                                    <li>
+                                        <div class="twitter">
+                                            <a href="#">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <span>Twitter</span>
+                                    </li>
+                                    <li>
+                                        <div class="youtube">
+                                            <a href="#">
+                                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <span>YouTube</span>
+                                    </li>
+                                    <li>
+                                        <div class="linkedin">
+                                            <a href="#">
+                                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <span>LinkedIn</span>
+                                    </li>
+                                    <li>
+                                        <div class="instagram">
+                                            <a href="#">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <span>Instagram</span>
+                                    </li>
+                                    <li>
+                                        <div class="github">
+                                            <a href="#">
+                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <span>Github</span>
+                                    </li>
+                                </ul>
+                            </section>
             </main>
             <div id="footer">
                 <div class="container">
